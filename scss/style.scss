@@ -95,6 +95,10 @@ header {
                 padding: 0 10px;
                 display: block;
             }
+            &.twitter a{
+                margin: 3px 0 -3px 0;
+                overflow: hidden;
+            }
         }
     }
 }
