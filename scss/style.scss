@@ -85,6 +85,7 @@ header {
         margin: 0;
         padding: 0;
         list-style: none;
+        overflow: hidden;
         li {
             float: left;
             transition: background-color 0.2s;
@@ -97,7 +98,6 @@ header {
             }
             &.twitter a{
                 margin: 3px 0 -3px 0;
-                overflow: hidden;
             }
         }
     }
