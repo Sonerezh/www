@@ -58,7 +58,7 @@ hr {
     padding: 0;
     margin: 0;
     height: 3px;
- 	border-top: 0;
+ 	border: 0;
  	background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
   	background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
   	background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
@@ -74,15 +74,10 @@ hr {
 header {
     color: $white;
     background-color: $blue;
-    line-height: 73px;
-    .brand {
-        float: left;
-        font-size: 36px;
-        font-weight: 700;
-    }
+    line-height: 50px;
     ul {
-        float: right;
-        margin: 0;
+        display: table;
+        margin: 0 auto;
         padding: 0;
         list-style: none;
         overflow: hidden;
@@ -93,11 +88,7 @@ header {
                 background-color: $light-blue;
             }
             a {
-                padding: 0 10px;
-                display: block;
-            }
-            &.twitter a{
-                margin: 3px 0 -3px 0;
+                padding: 0 20px;
             }
         }
     }
@@ -141,11 +132,10 @@ header {
         .btn {
             color: $white;
             background-color: $green;
-            width: 220px;
-            line-height: 62px;
-            font-size: 30px;
-            text-transform: uppercase;
-            border-radius: 15px;
+            padding: 0 10px;
+            line-height: 50px;
+            font-size: 25px;
+            border-radius: 10px;
             display: inline-block;
             transition: background-color 0.2s;
             &:hover {
@@ -153,10 +143,15 @@ header {
             }
             &.purple {
                 background: $purple;
-                margin-left: 80px;
+                margin-left: 50px;
                 &:hover {
                     background: $dark-purple;
                 }
+            }
+            small {
+                font-size: 15px;
+                padding: 0;
+                margin: 0;
             }
         }
     }
